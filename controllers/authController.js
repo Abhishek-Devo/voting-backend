@@ -73,7 +73,7 @@ exports.signup=async(req,res)=>{
 exports.login=async(req,res)=>{
     try{
         const {aadhar,password}=req.body;
-        //console.log(req.body)
+        console.log(req.body)
 
         //find user by aadhar number
         const user=await User.findOne({aadhar:aadhar});
